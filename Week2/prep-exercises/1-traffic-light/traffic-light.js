@@ -7,16 +7,20 @@
 
 function getCurrentState(trafficLight) {
   // TODO
-  // Should return the current state (i.e. colour) of the `trafficLight`
+  return(trafficLight.possibleStates[trafficLight.stateIndex]);
   // object passed as a parameter.
 }
 
 function getNextStateIndex(trafficLight) {
   // TODO
-  // Return the index of the next state of the `trafficLight` such that:
-  // - if the color is green, it will turn to orange
-  // - if the color is orange, it will turn to red
-  // - if the color is red, it will turn to green
+  
+    let nextIndex = 0;
+    const currentState = getCurrentState(trafficLight);
+    if(currentState === 'green'){
+      return(nextIndex += 1);
+    }else if (currentState === 'orange'){
+      return(nextIndex += 2);
+    }else return (nextIndex)
 }
 
 // This function loops for the number of seconds specified by the `secs`
