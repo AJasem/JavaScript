@@ -68,7 +68,7 @@ function createWallet(name, cash = 0) {
 }
 
 function main() {
-  const walletJack = createWallet("Jack", 100);
+  const walletJack = createWallet("Jack", 100); 
   const walletJoe = createWallet("Joe", 10);
   const walletJane = createWallet("Jane", 20);
 
